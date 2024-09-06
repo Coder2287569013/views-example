@@ -2,6 +2,7 @@
 <p>Description: {{product_info.description}}</p>
 <h2>Price: {{product_info.price}}</h2>
 <hr>
+
 <form method="POST" action="{% url 'product-overview' product_info.id %}">
 {% csrf_token %}
     <label for="author">Author:</label>
